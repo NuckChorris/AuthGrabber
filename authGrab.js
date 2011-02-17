@@ -129,7 +129,7 @@ var dAmnJS = function ( user, pass ) {
 		postdata  = 'ref=' + encodeURI( server.login.transport + server.login.host + server.login.file );
 		postdata += '&username=' + encodeURI( this.username );
 		postdata += '&password=' + encodeURI( this.password );
-		postdata += '&remember_me=1';
+		postdata += '&reusetoken=1';
 		
 		headers['Host']				= server.login.host;
 		headers['User-Agent']		= info.agent;
